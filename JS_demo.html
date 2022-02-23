@@ -4,26 +4,144 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="js_css.css">
+    <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Roboto">
+    <title>Andrew Huang</title>
 </head>
 <body>
+<!-- header/title -->
+    <div class="title">
+        <h1> Musicial Genius Andrew Huang </h1>     
+    </div>
     
-    <header> Empty Text Title </header>
+<!-- first bio and grid section -->
+<main class="bio"> 
+ 
+      <div > 
+    <p> Andrew Huang (born April 8, 1984) is a Canadian musician, music producer, singer-songwriter, rapper, 
+        multiinstrumentalist, video producer, and YouTube personality. He is best known for his "Song Challenge" video series, 
+        which invites viewers to dare him in feats of musicianship, as well as for several viral videos featuring his music. 
+        He is also known for his videos where he creates music using sounds from unconventional objects and instruments.
+        Huang has released more than 50 albums of original music through DFTBA Records and independently, under his own name
+        as well as under various pseudonyms. </p>
+      </div>  
 
-        
+      <div >
+        <picture> 
+            <img src="img/andrew_vidcon.jpg" alt="Image_1" width="600" height="600">
+        </picture>
+      </div>
+    
+</main>
+
+<!-- photo grid section -->
+<section>
+    <div class="grid">
+                       
+        <div class="pic1">
+            <picture>
+                <source media="(min-width: 650px)" srcset="img/andrew_guitar.jpg" width="600" height="369" >
+                <source media="(min-width: 465px)" srcset="img/andrew_drum.png" width="476" height="241">
+                <img src="img/andrew_art.jpg">
+              </picture>
+        </div>
+        <div class="pic1">   
+            <picture>
+                <source media="(min-width: 650px)" srcset="img/andrew_art.jpg" >
+                <source media="(min-width: 465px)" srcset="img/andrew_guitar2.png" width="468" height="240">
+                <img src="img/andrew_vidcon.jpg">
+              </picture>
+        </div>
+        <div class="pic1">
+            <picture>
+                <source media="(min-width: 650px)" srcset="img/andrew_synth2.jpg" width="640" height="360">
+                <source media="(min-width: 465px)" srcset="img/andrew_art.jpg" width="350" height="220">
+                <img src="img/andrew_synth3.jpg">
+              </picture>
+                       
+        </div>
+                        
+        <div class="pic2">
+            <picture>
+                <source media="(min-width: 650px)" srcset="img/andrew_synth3.jpg" width="512" height="326">
+                <source media="(min-width: 465px)" srcset="img/andrew_guitar.jpg" width="300" height="185">
+                <img src="img/andrew_phone.jpg">
+              </picture>
+        </div>
+        <div class="pic2">
+            <picture>
+                <source media="(min-width: 650px)" srcset="img/andrew_phone.jpg" width="640" height="360">
+                <source media="(min-width: 465px)" srcset="img/andrew_drums2.jpg" width="360" height="270">
+                <img src="img/andrew_synth.png">
+              </picture>
+        </div>
+        <div class="pic2">
+            <picture>
+                <source media="(min-width: 650px)" srcset="img/andrew_drums2.jpg" >
+                <source media="(min-width: 465px)" srcset="img/andrew_synth2.jpg" width="320" height="180">
+                <img src="img/andrew_guitar.jpg">
+              </picture>
+        </div>
+                        
+                        
+        <div class="pic3">
+            <picture>
+                <source media="(min-width: 650px)" srcset="img/andrew_synth.png" >
+                <source media="(min-width: 465px)" srcset="img/andrew_synth3.jpg" width="256" height="163">
+                <img src="img/andrew_drum.png">
+              </picture>
+        </div>
+        <div class="pic3">
+            <picture>
+                <source media="(min-width: 650px)" srcset="img/andrew_guitar2.png" width="936" height="480">
+                <source media="(min-width: 465px)" srcset="img/andrew_synth.png" width="490" height="360">
+                <img src="img/andrew_synth2.jpg">
+              </picture>
+        </div>
+        <div class="pic3">
+            <picture>
+                <source media="(min-width: 650px)" srcset="img/andrew_guitar.jpg" width="600" height="369" >
+                <source media="(min-width: 465px)" srcset="img/andrew_drum.png" width="476" height="241">
+                <img src="img/andrew_guitar2.png">
+              </picture>
+        </div>
+                        
+      </div>
+</section>
+
+<!-- second description -->
+<section>
+    <div class="desc2">
+        <p>
+            A versatile and prolific musician, he has released over 2,000 songs in a massive
+            range of genres. He is perhaps best known for the strange feats of musicianship 
+            which have earned him over 1.9 million subscribers and 250 million views on his 
+            YouTube channel: He has rapped 300 words in a minute, composed a classical piece 
+            in the shape of a unicorn head, and covered numerous pop songs using only the sounds 
+            of items mentioned in the lyrics - for instance, "99 Red Balloons" played on red balloons. 
+            In addition, his content runs the gamut from music education to equipment reviews to 
+            interactive projects with his fans.
+        </p>
+    </div>
+</section>
 
 
-
-
-
-
-
-
-
-
-
-
-
+<!-- contact form -->
+<div class="form">
+    <h2> Contact the Artist! </h2>
+    <form action="/action_page.php">
+        <label for="name">Name:</label><br>
+        <input type="text" id="fname" name="fname" value="First name Last name"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="lname" name="lname" value="example@example.com"><br>
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="lname" name="lname" value="Subject..."><br>
+        <label for="desciprtion">Message:</label><br>
+        <textarea rows="5" cols="80" id="TITLE">
+        </textarea> <br>
+        <input type="submit" value="Submit">
+      </form> 
+</div>
 
 
 
