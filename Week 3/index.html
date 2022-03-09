@@ -8,9 +8,30 @@
 <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Bootstrap UI Components</title>
+<!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    
+<!-- Style Sheet -->
+<style>
+  body{
+    font-family: 'EB Garamond', serif;
+  }
+
+  .display-1 {
+    font-size: 10rem;
+  }
+  .display-2 {
+    font-size: 4rem;
+  }
+</style>
+
+   <title>Bootstrap UI Components</title>
+
   </head>
   <body>
+
 
 <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-info">
@@ -32,30 +53,17 @@
         </div>
       </nav>
 
-<!-- jumbotron 
-<main>
-    <section class="container py-5 bg-light">
-        <div class="row py-5">
-            <div class="col-12 col-lg-6 mx-auto text-center text-md-start">
-                <h1 class="display-3 text-center text-md-start">deez nuts</h1>
-                <p class="lead text-center text-md-start"> ur mom ur mom ur mom ur mom ur mom ur mom ur mom ur mom ur mom ur mom </p>
-                <button type="button" class="btn btn-warning ">Warning</button>
-                <button type="button" class="btn btn-primary">Primary</button>
-            </div>
-        </div>
-    </section>
-  </main> -->    
-   
-<!-- caorsuel -->
+<!-- jumbotron -->
 <main>
   <section class="container py-3"> 
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/img17.jpg" class="d-block w-100" alt="...">
-
-        </div>
-      </div>
+    <div class="row">
+    <div class="col col-lg-6">
+      <img src="img/img17.jpg" alt="..." class="img-fluid">
+    </div>
+    <div class="col col-lg-6">
+      <h1 class="display-1"> Blue Butterfly</h1>
+    </div>
+  </div>
   </section>
 </main>
 
@@ -66,8 +74,8 @@
       <img src="img/p1.png" class="img-fluid" alt="front of store">
     </div>
     <div class="col-12 col-lg-7 order-lg-1">
-      <h3> The store </h3>
-      <p>Named after the protected, El Segundo, Butterfly, Blue Butterfly Coffee Co. has been locally owned and operated for 26 years.
+      <h1 class="display-2"> The store </h1>
+      <p class="fs-4">Named after the protected, El Segundo, Butterfly, Blue Butterfly Coffee Co. has been locally owned and operated for 26 years.
         For 26 years we have shared coffee, food we love, and our lives with our community. Proprietors Dale & Toni Inghram, are active 
         members in the El Segundo community. Dale Inghram is a certified coffee Q-Grader. He founded a second coffee roasting company, 
         Smoky Hollow Coffee Roasters. Blue Butterfly Coffee Co. sources all of their coffee beans from Smoky Hollow Coffee Roasters. 
@@ -80,8 +88,8 @@
       <img src="img/p2.png" class="img-fluid" alt="barista making coffee">
     </div>
     <div class="col-12 col-lg-7">
-      <h3> Friendly Staff </h3>
-      <p> Our staff is nothing but coffee lovers and kind people. Ready to help serve you and provide you the best cafe experience possible.
+      <h1 class="display-2"> Friendly Staff </h1>
+      <p class="fs-4"> Our staff is nothing but coffee lovers and kind people. Ready to help serve you and provide you the best cafe experience possible.
         Ask them for recommendations! Be it coffee, tea, or one of our delicious food items. There is such a pleaseant atmosphere here.
         With students studying, people working, or just catching up with their friends and family. Blue Buttefly Coffee is a warm innviting 
         welcoming place for anyone and will always be greeted with a smile! 
@@ -93,34 +101,54 @@
 
 
 <!-- menu -->
+<h2 class="display-2 text-center" > Menu </h2>
 <table class="table table-striped">
   <thead>
-    <th scope="col">Name of Dish </th>
-    <th scope="col"> Image of Dish</th>
-    <th scope="col">Price of Dish </th>
+    <th scope="col">Name </th>
+    <th scope="col">Price </th> 
+
   </thead>
   <tbody>
     <tr>
-      <td> Mocha Capchino </td>
-      <td> <img src="img/m4.png" class="img-fluid" alt="Front of Store">  </td>
-      <td> $4.99 </td>
+      <td> <h2> Espresso</h2>  </td>
+      <td> <h2> $2.99 </h2> </td>
     </tr>
     <tr>
-      <td> Chocolate Cookies </td>
-      <td> <img src="img/m1.png" class="img-fluid" alt="cookie">  </td>
-      <td> $3.99 </td>
+      <td> <h2> Latte</h2>  </td>
+      <td> <h2> $3.99 </h2> </td>
     </tr>
-    <td> Coffee Crumble Cake </td>
-    <td> <img src="img/m3.png" class="img-fluid" alt="cake">  </td>
-    <td> $6.99 </td>
+    <tr>
+      <td> <h2> Mocha</h2>  </td>
+      <td> <h2> $3.99 </h2> </td>
+    </tr>
+    <tr>
+      <td> <h2> Green Tea</h2>  </td>
+      <td> <h2> $1.99 </h2> </td>
+    </tr>
+    <tr>
+      <td> <h2> Oolong Tea</h2>  </td>
+      <td> <h2> $1.99 </h2> </td>
+    </tr>
+    <tr>
+      <tr>
+        <td> <h2> Tuna Salad</h2>  </td>
+        <td> <h2> $5.99 </h2> </td>
+      </tr>
+      <tr>
+        <td> <h2> Egg Mayo Sandwich</h2>  </td>
+        <td> <h2> $7.99 </h2> </td>
+      </tr>
+      <td> <h2>Chocolate Chip Cookies </h2>  </td> 
+      <td> <h2> $3.99</h2>  </td>
+    </tr>
+    <td> <h2> Coffee Crumble Cake</h2>  </td>
+    <td> <h2> $6.99</h2>  </td>
   </tr>
 </tr>
-<td> Espresso and Cheese Cake Combo </td>
-<td> <img src="img/m2.png" class="img-fluid" alt="cake">  </td>
-<td> $8.99 </td>
+<td> <h2> Espresso and Cheese Cake Combo</h2>  </td>
+<td> <h2> $8.99</h2>  </td>
 </tr>
   </tbody>
-
 </table>
 
 
@@ -138,31 +166,31 @@
               </div>
               <div class="col"> 
                 <div class="card">
-                  <img src="img/g2.png" class="card-img-top" alt="...">
+                  <img src="img/g2.png" class="card-img-top" alt="autum leaves">
 
                 </div>
               </div>
               <div class="col"> 
                 <div class="card">
-                  <img src="img/g6.png" class="card-img-top" alt="...">
+                  <img src="img/g6.png" class="card-img-top" alt="lights">
 
                 </div>
               </div>
               <div class="col"> 
                 <div class="card">
-                  <img src="img/g4.png" class="card-img-top" alt="...">
+                  <img src="img/g4.png" class="card-img-top" alt="pucks">
 
                 </div>
               </div>              
               <div class="col"> 
                 <div class="card">
-                  <img src="img/g3.png" class="card-img-top" alt="...">
+                  <img src="img/g3.png" class="card-img-top" alt="latte pour">
 
                 </div>
               </div>
               <div class="col"> 
                 <div class="card">
-                  <img src="img/g5.png" class="card-img-top" alt="...">
+                  <img src="img/g5.png" class="card-img-top" alt="rooftop room">
 
                 </div>
               </div>
