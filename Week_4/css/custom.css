@@ -1,0 +1,16 @@
+
+.bg-danger{
+    color: rgb(255, 62, 62);
+}
+
+.nav-link:focus, .nav-link:hover{
+    color: rgb(243, 232, 121) ;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    color: rgb(243, 232, 121)
+}
+
+.nav-link{
+color: aqua;
+}
