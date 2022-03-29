@@ -3,14 +3,34 @@
     color: rgb(255, 62, 62);
 }
 
-.nav-link:focus, .nav-link:hover{
-    color: rgb(243, 232, 121) ;
-}
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-    color: rgb(243, 232, 121)
+a.nav-link {
+    color: beige;
 }
+ header{
+     font-family: 'Bitter', serif;
+ }
 
-.nav-link{
-color: aqua;
+
+  
+  h1 {
+      font-family: 'Bitter', serif;
+  }
+  h2,h3,h4,h5,h6 {
+    font-family: 'Ubuntu', sans-serif;
 }
+ p {
+      font-family: 'Ubuntu', sans-serif;
+  }
+
+  
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
