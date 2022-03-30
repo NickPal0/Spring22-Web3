@@ -1,0 +1,75 @@
+
+h1 {
+  font-family: 'Indie Flower', cursive;
+}
+h6 {
+  font-family: 'Indie Flower', cursive;
+    font-size: 2em;
+}
+h2,h3,h4,h5 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+p {
+
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+span.fs-3{
+  font-family: 'Indie Flower', cursive;
+}
+.bg-danger {
+  --bs-bg-opacity: 1;
+  background-color: #BCF4DE!important;
+}
+
+.bg-light{
+  background-color: #CDE5D7!important; 
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #FFB7C3;
+  border-color: #FFB7C3;
+}
+.border-primary {
+  border-color: #FFB7C3!important;
+}
+.bg-primary {
+  --bs-bg-opacity: 1;
+  background-color: #EEC6CA!important;
+}
+
+.form-check-input:focus {
+    border-color: #FFB7C3;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #EEC6CA;
+}
+.form-check-input:checked {
+    background-color: #FFB7C3;
+    border-color: #EEC6CA;
+    
+}
+.btn-link-hover-color{
+color:#FFB7C3
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #EEC6CA;
+    border-color: #FFB7C3;
+}
+body{
+  background-color: #DED6D1;
+}
+a.nav-link {
+  color: rgb(0, 0, 0);
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: #ffffff;
+}
+
+a:link { text-decoration: none; color: black;}
+a:visited { text-decoration: none; color: black;}
+a:hover { text-decoration: none; color: black; }
+a:active { text-decoration: none; color: black;}

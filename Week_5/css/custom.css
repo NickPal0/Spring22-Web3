@@ -1,5 +1,5 @@
 
-h1{
+h1 {
     font-family: 'Bitter', serif;
 }
 h6 {
@@ -17,10 +17,9 @@ p {
 span.fs-3{
   font-family: 'Bitter',serif;
 }
-.bg-danger {
-    --bs-bg-opacity: 1;
-    background-color: #FF3E3E!important;
-  }
+.bg-danger{
+  color: rgb(255, 62, 62);
+} 
 
 .bg-light{
   background-color: #D8E2DC 

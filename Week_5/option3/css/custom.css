@@ -1,0 +1,75 @@
+
+h1 {
+  font-family: 'Merriweather', serif;
+}
+h6 {
+  font-family: 'Merriweather', serif;
+    font-size: 2em;
+}
+h2,h3,h4,h5 {
+  font-family: 'Cormorant Garamond', serif;
+}
+p {
+
+  font-family: 'Cormorant Garamond', serif;
+}
+
+span.fs-3{
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.bg-danger {
+  --bs-bg-opacity: 1;
+  background-color: #4FB286!important;
+}
+
+.bg-light{
+  background-color: #D8E2DC 
+}
+
+
+.btn-primary {
+  color: #fff;
+  background-color: #50FFB1;
+  border-color: #4FB286;
+}
+.border-primary {
+  border-color: #4FB286!important;
+}
+.bg-primary {
+  --bs-bg-opacity: 1;
+  background-color:#50FFB1!important;
+}
+
+.form-check-input:focus {
+    border-color: #4FB286;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #3C896D;
+}
+.form-check-input:checked {
+    background-color: #50FFB1;
+    border-color: #50FFB1;
+    
+}
+.btn-link-hover-color{
+color:#50FFB1;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #50FFB1;
+    border-color: #4FB286;
+}
+
+a.nav-link {
+  color: rgb(0, 0, 0);
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: #ffffff;
+}
+
+a:link { text-decoration: none; color: #0A0F0D;}
+a:visited { text-decoration: none; color: #0A0F0D;}
+a:hover { text-decoration: none; color: #0A0F0D; }
+a:active { text-decoration: none; color: #0A0F0D;}

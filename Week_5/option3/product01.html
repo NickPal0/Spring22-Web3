@@ -12,7 +12,7 @@
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bitter&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Merriweather&display=swap" rel="stylesheet">
 <!-- CSS -->
 <link rel="stylesheet" href="css/custom.css">
 
@@ -38,67 +38,65 @@
       </div>
 </header>
 
-
 <body>
 
 
 
 <main>
-<!-- brief sumarry -->
-<section class="container py-3 mb-4">
-    <div class="row">
-      <div class="col-12 col-lg-5 order-lg-2">
-        <img src="img/kitchen02.png" class="img-fluid" alt="front of store">
-      </div>
-      <div class="col-12 col-lg-7 order-lg-1">
-        <h1 class="display-2"> FAQs and Help </h1>
-        <p class="fs-4">We are just a phone call or email away! Please if you have any problem or questions regarding our product or services we will be happy to oblige, within operating hours.
-          Here are a few frequently ask questions with answers!
-          1. 
-          Q: "Why hasn't my knife shown up yet?"
-          A: Likely it is a problem with your local post office, please try giving them a call first.
-          2. 
-          Q: "What is the best knife to start with?"
-          A: We like to recommend a 8-10 inch chefs knife to start off. It can do all the dicing, cuting, and fileting that any beginner home cook would ever need!
-          3. 
-          Q: "Why do I need my knife sharpened?"
-          A: Having a sharp knife can actually protect you, as odd as it may sound. Having a dull knife leads to a lot more accidents because of how dull it is can lead to slipping
-          while cutting and that usually means its going to be slipping on to you.
-        </p>
-      </div>
-    </div>
-  </section>
-  
-<!-- news letter form -->
-<section class="container py-3 mb-4 "> 
-  <h2> Any further questions or problems feel free to reach out! </h2>
-<form>
-    <div class="col-md-10 mx-auto col-lg-5 ">
-    <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-    </div>
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1">
-    </div>
-    <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-</div>
-  </form>
-</section>
 
+
+      
+        <section class="container mb-4 py-4 bg-light">
+          <div class="row">
+            <div class="col-12 col-lg-5 order-lg-2">
+              <!-- carousel -->
+              <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="img/knife01.png" class="d-block w-100" alt="...">
+                  
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="img/knife01.2.png" class="d-block w-100" alt="...">
+                   
+                  </div>
+                </div>
+              
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <div class="col-12 col-lg-7 order-lg-1">
+              <!-- Description of Product -->
+              <h1 class="display-2 fw-bold"> Japanese Knife </h1>
+              <h2 class="display-5 "> $159.99  </h2>
+              <p class="fs-5">A Carbon Steel, 9 inch (148mm) blade, ambixetrious handle. Made for beginer and pro home cooks alike. A great all around tool that 
+                can be used for just about anything in the kitchen.
+              </p>
+              <a href="checkout.html" class="btn btn-primary btn-lg w-50" tabindex="-1" role="button" aria-disabled="true"> Add To Cart <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+              </svg></a>
+            </div>
+          </div>
+        </section>
 
 
 </main>
 
 <!-- footer -->
 <footer>
-    <div class="container ">
+    <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
           <div class="col-md-4 d-flex align-items-center">
             <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
@@ -122,5 +120,7 @@
       </div>
 </footer>
 
+<!-- Javascript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
