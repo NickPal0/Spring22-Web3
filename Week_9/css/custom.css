@@ -1,5 +1,4 @@
-
- body{
+body{
     background-color: #faebd7;
 }
 
@@ -8,15 +7,11 @@
    background: radial-gradient(circle, rgba(250,235,215,1) 1%, rgba(245,160,47,1) 48%, rgba(222,158,71,1) 100%);
    }
 
-   section{
-       position: relative;
+   section{ 
        height: 300px;
-       margin-top: 200px;
    }
 
   section div {
-      width: 300px;
-      height: 300px;
       position: absolute;
       transition: 2500ms ;
   }
@@ -51,9 +46,9 @@
   }
 
       
-/* transitions */
+/* translates */
 /* cat1 translate*/
-  #cat1:active {
+  #cat1.active {
    transform: translate(100px, 50%);
      
 }
@@ -65,7 +60,7 @@
 }
 
 /* cat3 translate + scale */
-#cat3:active {
+#cat3:hover {
    transform: translate(100px, 50%) scale(0.5, 0.75);
      
 }
@@ -88,6 +83,7 @@
       
 }
 
+/* text on images */
 .card-img-overlay {
    
    text-align: center;
@@ -96,10 +92,71 @@
    
 }
 
-#cat5 h2 {
+/* text on images */
+#cat1 h2 {
+   position: absolute;
    font-size: 40px;
    text-align: center;
-   top: 50%;
-   transform: translateY(-50%);
-  
+   left: 50%;
+   width: 100%;
+   transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  bottom: 0;
+}
+#cat2 h2 {
+   position: absolute;
+   font-size: 40px;
+   text-align: center;
+   left: 50%;
+   width: 100%;
+   transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  bottom: 0;
+}
+#cat3 h2 {
+   position: absolute;
+   font-size: 40px;
+   text-align: center;
+   left: 50%;
+   width: 100%;
+   transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  bottom: 0;
+}
+#cat4 h2 {
+   position: absolute;
+   font-size: 40px;
+   text-align: center;
+   left: 50%;
+   width: 100%;
+   transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  bottom: 0;
+}
+
+#cat5 h2 {
+   position: absolute;
+   font-size: 40px;
+   text-align: center;
+   left: 50%;
+   width: 100%;
+   transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  bottom: 0;
+}
+
+#cat6 h2 {
+   position: absolute;
+   font-size: 40px;
+   text-align: center;
+   left: 50%;
+   width: 100%;
+   transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  bottom: 0;
+}
+
+#logo:hover{
+   transform: scale(1.47) translateY(5px);
+   transition: 2500ms ;
 }
