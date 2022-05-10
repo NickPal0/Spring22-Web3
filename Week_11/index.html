@@ -17,27 +17,21 @@
     
 <style>
 body{
-     background-color: #f1f1f1;
      margin: 0px;
-     
+     animation-name:  bodyfill;
+     animation-duration: 2s;
+     animation-fill-mode: forwards;
+ 
     }
 
     .strip{
  height: 100%;
- width: 100vw;
+ width: 100%;
  position: absolute;
  
 }
 
-    #strip1{
-background-color: #214599;
 
- top: 0;
- animation-name:  slide;
- animation-duration: 1s;
- z-index: -1;
-   
-} 
 
 .video{
     opacity: 0;
@@ -46,6 +40,7 @@ background-color: #214599;
     animation-name: mainfade;
     animation-duration: 1.5s;
     animation-delay: 1.5s;
+    animation-fill-mode: forwards;
 }
 
 .map{
@@ -55,6 +50,7 @@ background-color: #214599;
     animation-name: mainfade;
     animation-duration: 1.5s;
     animation-delay: 1.5s;
+    animation-fill-mode: forwards;
 }
 
 
@@ -121,6 +117,11 @@ nav div:hover {
     
 }
 
+@keyframes bodyfill{
+    from {background-color: #ffffff;}
+    to {background-color: #214599;}
+}
+
 </style>
 
 
@@ -174,8 +175,20 @@ nav div:hover {
 </div>    
 </div>
 
-
-
+<h2 class="display-5 text-center"> Some satisfied customers </h2>
+<!-- sound effect -->
+<div class="container map"> 
+    <div class="row"> 
+        <div class="col">
+            <div class="ratio ratio-16x9"> 
+            <audio>
+                <source src="media/Yay.mp3" type="audio/mpeg">
+                <source src="media/Yay.mp3" type="audio/mpeg">
+            </audio>
+            </div>
+        </div>
+    </div>    
+    </div>
 
 
 
