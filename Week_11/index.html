@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+
+    
+<style>
+body{
+     background-color: #f1f1f1;
+     margin: 0px;
+     
+    }
+
+    .strip{
+ height: 100%;
+ width: 100vw;
+ position: absolute;
+ 
+}
+
+    #strip1{
+background-color: #214599;
+
+ top: 0;
+ animation-name:  slide;
+ animation-duration: 1s;
+ z-index: -1;
+   
+} 
+
+.video{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    animation-name: slide;
+    animation-duration: 1.5s;
+}
+
+
+header{
+     margin-bottom: 40px;
+    }
+
+h1{
+     font-family: 'Montserrat', sans-serif;
+     color: white;
+    }
+
+    h2{
+     font-family: 'Montserrat', sans-serif;
+     color: white;
+    }
+
+.center {
+     margin: auto;
+     width: 50%;
+     padding: 10px;
+    }
+    
+nav div{
+   padding: 10px 20px;
+   display: inline-block;
+   border-bottom: 2px solid transparent;
+   transition: background-color 3s, border-bottom 5s;
+}
+
+nav a{
+   color: rgb(255, 255, 255);
+   padding: 10px 20px;
+   display: inline-block;
+   border-bottom: 2px solid transparent;
+   transition: background-color 3s, border-bottom 5s;
+}
+
+
+nav a:hover {
+   background-color: rgb(249,211,186);
+   border-bottom: 2px solid rgb(201, 125, 75);
+   color: rgb(0,0,0);
+}
+
+nav div:hover {
+   background-color: rgb(255, 255, 255);
+   border-bottom: 2px solid rgb(139, 139, 139);
+}
+
+
+
+.map{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+/* animation */
+@keyframes mainfade {
+    from {opacity: 0;}
+    to {opacity: 1}
+    
+}
+
+@keyframes slide {
+    from {right: -100vw;}
+    to {right: 0;}
+    
+}
+
+</style>
+
+
+
+</head>
+
+
+
+<body>
+
+<!-- Header -->
+<header class="container-fluid ">
+    <div class="gradient1 d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+        <div class="lilguy">
+            <img src="img/egg.png" alt="little egg">           
+       </div> 
+        <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+          <a class="me-3 py-2 text-decoration-none" href="https://www.youtube.com/watch?v=PL9iMPx9CpQ">Full Video</a>
+          <a class="me-3 py-2 text-decoration-none" href="https://www.youtube.com/shorts/7I0fwedAKjs?&ab_channel=SideserfCakeStudio">Help!</a>
+          <a class="me-3 py-2 text-decoration-none blue" href="https://www.youtube.com/watch?v=QUqCWkPlLLc">Other Cool Video</a>        
+        </nav>
+      </div>
+
+</header>
+
+    <main> 
+<div class="strip" id="strip1"> </div>
+
+        <h1 class="display-1 text-center fw-bold"> One of my favorite videos on the internet </h1>
+<!-- Video -->
+<div class="video"> 
+<div class="row">
+    <div class="col">
+        <div class="ratio ratio-16x9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KqH2Po4Kp0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<h2 class="display-5 text-center"> Best place to get some eggs </h2>
+<!-- map -->
+<div class="row"> 
+    <div class="col">
+        <div class="ratio ratio-16x9"> 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d211755.19369241808!2d-118.44677718091882!3d33.97519453774262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c91b77e2793b%3A0x38bb6468e34404a6!2sToby%20Egg%20Farms!5e0!3m2!1sen!2sus!4v1651785651860!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</div>    
+
+
+
+
+
+
+
+ 
+    </main>
+
+
+
+</body>
+</html>
