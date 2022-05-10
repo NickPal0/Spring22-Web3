@@ -40,6 +40,16 @@ background-color: #214599;
 } 
 
 .video{
+    opacity: 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    animation-name: mainfade;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+}
+
+.map{
+    opacity: 0;
     margin-top: 40px;
     margin-bottom: 40px;
     animation-name: mainfade;
@@ -94,15 +104,6 @@ nav div:hover {
    background-color: rgb(255, 255, 255);
    border-bottom: 2px solid rgb(139, 139, 139);
 }
-
-
-
-.map{
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-
 
 
 
@@ -163,7 +164,7 @@ nav div:hover {
 
 <h2 class="display-5 text-center"> Best place to get some eggs </h2>
 <!-- map -->
-<div class="container"> 
+<div class="container map"> 
 <div class="row"> 
     <div class="col">
         <div class="ratio ratio-16x9"> 
