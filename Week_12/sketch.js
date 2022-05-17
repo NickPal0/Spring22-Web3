@@ -33,9 +33,7 @@ function setup(){
     velX = 3;
     velY = 2;
 
-    
-
-    radius = 50 ;
+    radius = 25 ;
     circleClr = color(205,50,211);
 
     clickCounter = 0;
@@ -77,7 +75,6 @@ function draw(){
     fill(0,0,100)
     text('miss',11,60)
     text(clickMiss, 78, 60);
-
 
 }// end of draw
 
