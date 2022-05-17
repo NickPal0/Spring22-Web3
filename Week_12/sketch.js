@@ -33,9 +33,9 @@ function setup(){
     velX = 3;
     velY = 2;
 
-    sliderSize = 0;
+    
 
-    radius = 50 + sliderSize;
+    radius = 50 ;
     circleClr = color(205,50,211);
 
     clickCounter = 0;
@@ -47,6 +47,8 @@ function draw(){
 
     noStroke();
     circleClr= color(sliderHue.value(),80,100)
+    const s = sliderSize.value();
+    radius = 50 + s;
     fill(circleClr)
     circle(posX ,posY , radius * 2);
     if(posX + radius >= width || posX - radius <= 0){
@@ -61,18 +63,20 @@ function draw(){
     noFill();
     stroke(270,70,0);
     strokeWeight(5);
-    rect(5,5,70,61);
+    rect(5,5,117,61);
 
     textSize(24);
     strokeWeight(2);
     fill(0,0,100)
-    text(clickCounter, 28, 28);
+    text('hit',11,28)
+    text(clickCounter, 78, 28);
 
 
     textSize(24);
     strokeWeight(2);
     fill(0,0,100)
-    text(clickMiss, 28, 60);
+    text('miss',11,60)
+    text(clickMiss, 78, 60);
 
 
 }// end of draw
