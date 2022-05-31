@@ -10,8 +10,16 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+<script src="sketch.js"></script> 
 <!-- my Css -->
 <link href="css/custom.css" rel="stylesheet">
+<!-- font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Tiro+Devanagari+Sanskrit&display=swap" rel="stylesheet">
+
 
 </head>
 
@@ -21,44 +29,24 @@
 
 
 <body>
+
 <!-- nav bar -->
-    <header>
-        <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-dark p-4">
-              <h5 class="text-white h4">Ur Mix</h5>
-              <span class="text-muted">Toggleable via the navbar brand.</span>
-              <!-- nav items -->
-              <li class="nav-item">
-                <a class="nav-link active  text-bg-primary" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active  text-bg-primary" aria-current="page" href="#">What are we</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active  text-bg-primary" aria-current="page" href="#">Meet our Team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active  text-bg-primary" aria-current="page" href="#">Icons</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active  text-bg-primary" aria-current="page" href="#">Satisfied Customers</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active  text-bg-primary" aria-current="page" href="#">Contact Us</a>
-              </li>
-            </div>
-          </div>
-          <nav class="navbar navbar-dark bg-dark">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">
+<header class="container-fluid ">
+    <div class="gradient1 d-flex flex-column flex-md-row align-items-center pb-3 pt-2 border-bottom">
 
+            <img src="img/logo.png" alt="logo" width="60" height="60"> 
+          
+  
+        <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+          <a class="me-3 py-2 text-decoration-none" href="#what">What We Are</a>
+          <a class="me-3 py-2 text-decoration-none" href="#team">Our Team</a>
+          <a class="me-3 py-2 text-decoration-none " href="#work">Who We Work With</a>
+          <a class="me-3 py-2 text-decoration-none " href="#customers">Satisfied Customers</a>
+          <a class="me-3 py-2 text-decoration-none " href="#contact">Contact Us</a>
+        </nav>
+      </div>
 
-                </span>
-              </button>
-            </div>
-          </nav>
-      </header>
+</header>
 
 
 <!-- carousel -->
@@ -66,197 +54,175 @@
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item carousel-item-next carousel-item-start">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">First slide</text></svg>
-    
+          <img src="img/group1.png" class="container-fluid">
         </div>
         <div class="carousel-item">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text></svg>
+          <img src="img/group2.png" class="container-fluid">
     
         </div>
         <div class="carousel-item active carousel-item-start">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text></svg>
+          <img src="img/group3.png" class="container-fluid">
     
         </div>
       </div>
     </div>
 
-
-<div class="container">   
-<!-- what are we -->
-    <div class="row">
-        <h1 class="text-center mb-4 mt-5"> What we are</h1>
+<a name="what"> 
+<div class="container" id="what">   
+<!-- what are we 5-7 -->
+    <div class="row fuckit fade-in">
+        <h1 class="text-center mb-5"> What we are</h1>
         <div class="col-md-7">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                anim id est laborum.
+                Ur Mix is a program that helps chefs from all age ranges and background find their footing in the culinary industry.
+                Taking the first step into gettign inolved can be a dauting task. So we are here to help those who wish to pursue a career in cooking.
+                We do so by setting up individuals with either culuinary schools, or jobs that we find suit them the best based on what they wish
+                to do and where they want to go on their culiary journey. From working in world class resturants around the world, to working as a professor is 
+                the top culinary schools in the country. We are here to provide that opporunity to those who are willing to put in the work. There have been individuals
+                who have gone off and started their own sucessful buisnesses by taking what they learned from resturant jobs, we aided them in finding, and building off of that.
+                It is truly incredible experience to see people chance their dreams and succeed. Which is why we love to help in anyway we can to those who need it. 
             </p>  
         </div>
 
-        <div class="col-md-5">
-            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></svg>
+        <div class="col-md-5 container-fluid cropped">
+            <img src="img/img2.jpg" width="400" height="400">
+           
         </div>
 
 
     </div>
+</a>
 
 
-<hr class="my-7">
+
+<a name="team"> 
 <!-- our team -->
-<div class="row">
-    <h1 class="text-center my-5"> Meet our Team</h1>
+<div class="row fuckit ">
+    <h1 class="text-center mb-5 mt-5"> Meet our Team</h1>
     <!-- person 1 -->
-    <div class="col-lg-4 text-center">
-        <svg class="bd-placeholder-img rounded-circle " width="200" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 200x200" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">200x200</text></svg>
-        <h2 class="fw-normal text-center my-4">Heading</h2>
-        <p class="text-start">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
-        </p>
+    <div class="col-lg-4 text-end ">
+        <img src="img/person1.png" class="imgcircle opacityR">
+        <h2 class="fw-normal text-start my-4 opacityL">Susie</h2>
+        <p class="text-start opacityL ">
+            Susie is our Porgram Director and CEO. She founded this company because of her own personal experience within the culinary industry. 
+            Experiencing first hand how dauting the industry can be. She wants to make sure that chefs who have aspirations and potential 
+            aren't driven away from purusing their dreams.   </p>
     </div>
     <!-- person 2 -->
-    <div class="col-lg-4 text-center">
-        <svg class="bd-placeholder-img rounded-circle" width="200" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 200x200" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">200x200</text></svg>
-        <h2 class="fw-normal text-center my-4">Heading</h2>
-        <p class="text-start">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
+    <div class="col-lg-4 text-end ">
+       <img src="img/person4.png" class="imgcircle opacityR">
+        <h2 class="fw-normal text-start my-4 opacityL">Earl</h2>
+        <p class="text-start opacityL">
+            Earl is our COO, more often than not Earl will be the one you will hear back from when you contact us. With over 20+ years in the Culinary Industry working himself 
+            from being a dish washer to owning 3 very successful resturants. 
         </p>
     </div>
     <!-- person 3 -->
-    <div class="col-lg-4 text-center">
-        <svg class="bd-placeholder-img rounded-circle" width="200" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 200x200" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">200x200</text></svg>
-        <h2 class="fw-normal text-center my-4">Heading</h2>
-        <p class="text-start">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
+    <div class="col-lg-4 text-end">
+        <img src="img/person2.png" class="imgcircle opacityR">
+        <h2 class="fw-normal text-start my-4 opacityL">Lorraine</h2>
+        <p class="text-start opacityL">
+            Lorraine is our contact who gets us involved with resturants and culinary schools. With over 10+ years working with resturants, she does so with our 
+            clients in mind. Ensuring that she provides nothing but the best opporunities to those who wish to be in the industry. 
         </p>
     </div>
 
 </div>
+</a>
 
 
-<hr class="my-7">
-<!-- icons -->
-<div class="row">
-    <h1 class="text-center my-5"> icons</h1>
-    <!--  1 -->
-    <div class="col-lg-4 text-center">
-        <svg class="bd-placeholder-img rounded-square" width="200" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 200x200" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">200x200</text></svg>
-        <h2 class="fw-normal text-center my-4">Heading</h2>
-        <p class="text-start">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
-        </p>
+
+
+<a name="work">
+<!-- who we worked with -->
+<div class="bg-dark fuckit"> 
+<div class="row fontwhite">
+    <h1 class="text-center mb-4 mt-5"> Who We Work With</h1>
+    <div class="col-md-12 text-center">
+        <p>
+            We work with with resturants around the world, from fine dining to more casual mom and pop shops. As well as some of the top culinary schools.
+             All of the companies below and more are proud collaborators, contact us to find a more extensive list based on what you want to pursue.
+        </p>  
     </div>
-    <!--  2 -->
-    <div class="col-lg-4 text-center">
-        <svg class="bd-placeholder-img rounded-square" width="200" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 200x200" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">200x200</text></svg>
-        <h2 class="fw-normal text-center my-4">Heading</h2>
-        <p class="text-start">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
-        </p>
+</div>
+
+<div class="row  mt-5"> 
+    <div class="col-md-4 container-fluid text-center">
+        <img src="img/work1.png" width="200" height="200">
     </div>
-    <!--  3 -->
-    <div class="col-lg-4 text-center">
-        <svg class="bd-placeholder-img rounded-square" width="200" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 200x200" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">200x200</text></svg>
-        <h2 class="fw-normal text-center my-4">Heading</h2>
-        <p class="text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
-        </p>
+    <div class="col-md-4 container-fluid text-center">
+        <img src="img/work2.png" width="200" height="200">
+    </div>
+    <div class="col-md-4 container-fluid text-center">
+        <img src="img/work3.png" width="200" height="200">
+    </div>
+</div>
+<div class="row  mt-5 mb-5"> 
+    <div class="col-md-4 container-fluid text-center">
+        <img src="img/work4.png" width="200" height="200">
+    </div>
+    <div class="col-md-4 container-fluid text-center">
+        <img src="img/work5.png" width="200" height="200">
+    </div>
+    <div class="col-md-4 container-fluid text-center">
+        <img src="img/work6.png" width="200" height="200">
     </div>
 
 </div>
+</div>
+</a>
 
 
-<hr class="my-7"> 
+
+
+<a name="customers">
 <!-- satisfied customers -->
-<div class="row">
-    <h1 class="text-center my-5"> Satisfied Customers</h1>
+<div class="row fuckit">
+    <h1 class="text-center mb-5"> Satisfied Customers</h1>
     <!-- person 1 -->
     <div class="col-lg-4 text-end">
-        <svg class="bd-placeholder-img rounded-circle" width="200" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 200x200" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">200x200</text></svg>
-        <h2 class="fw-normal text-start my-4">Heading</h2>
+        <img src="img/person5.png" class="imgcircle">
+        <h2 class="fw-normal text-start my-4">Pete</h2>
         <p class="text-start">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
+            Pete took the experiences that he learned working our returants to build a buisness of his own. Pete now owns a very sucessful 
+            Italian Resturant in Downtowm Los Angeles. Having earned himself one Michelin Star, this year he plans to aim for his next.
         </p>
     </div>
     <!-- person 2 -->
     <div class="col-lg-4 text-end">
-        <svg class="bd-placeholder-img rounded-circle" width="200" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 200x200" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">200x200</text></svg>
-        <h2 class="fw-normal text-start my-4">Heading</h2>
+        <img src="img/person6.png" class="imgcircle">
+        <h2 class="fw-normal text-start my-4">Cesar</h2>
         <p class="text-start">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
+            Cesar a young chef, is currently working at famous bakery in northern Germany under one of the most talented bread makers in the world.
+            He plans to apply what he's learned when he comes back home to the United States and start a bakery of his own, with his teachers blessing.
+            Purusing his dreams he has had since he was a young boy.
         </p>
     </div>
     <!-- person 3 -->
     <div class="col-lg-4 text-end">
-        <svg class="bd-placeholder-img rounded-circle" width="200" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 200x200" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">200x200</text></svg>
-        <h2 class="fw-normal text-start my-4">Heading</h2>
+       <img src="img/person7.png" class="imgcircle">
+        <h2 class="fw-normal text-start my-4">Andrea</h2>
         <p class="text-start">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
+            Andrea now works as the Sous-chef at Gordon Ramsay Pub & Grill in Las Vegas. From being a young girl helping her mother in the kitchen. 
+            To now working in one of the most prestigious kitchens in the Las Vegas area. Working with chefs from all different background building her skills 
+            to reach even higher in the culinary world.
         </p>
     </div>
 
 </div>
+</a>
 
-<hr class="my-7">  
+
+
 
 
 <!-- contact form--> 
-<section class="mb-4 mt-2">
+<a name="contact">
+<section class="mb-4 mt-2 fuckit">
 
     <h2 class="h1-responsive font-weight-bold text-center my-5">Contact us</h2>
-    <p class="text-center w-responsive mx-auto mb-5">            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-        anim id est laborum.</p>
+    <p class="text-center w-responsive mx-auto mb-5"> If you are interested in purusing your dreams or finding a resturant that is right for you. Feel free to contact us. 
+        We are more than happy to help chefs young and old find their way in the culinary industry. </p>
     <div class="row mb-3">
  
         <div class="col-md-9 mb-md-0 mb-5">
@@ -265,16 +231,16 @@
                 <div class="row mb-3">
                  
                     <div class="col-md-6">
-                        <div class="md-form mb-0">
+                        <div class="md-form mb-4">
                             <input type="text" id="name" name="name" class="form-control">
-                            <label for="name" class="">Your name</label>
+                            <label for="name" class="mb-1">Your name</label>
                         </div>
                     </div>
 
                     <div class="col-md-6">
-                        <div class="md-form mb-0">
+                        <div class="md-form mb-4">
                             <input type="text" id="email" name="email" class="form-control">
-                            <label for="email" class="">Your email</label>
+                            <label for="email" class="mb-1">Your email</label>
                         </div>
                     </div>
 
@@ -282,9 +248,9 @@
 
                 <div class="row mb-3">
                     <div class="col-md-12">
-                        <div class="md-form mb-0">
+                        <div class="md-form mb-4">
                             <input type="text" id="subject" name="subject" class="form-control">
-                            <label for="subject" class="">Subject</label>
+                            <label for="subject" class="mb-1">Subject</label>
                         </div>
                     </div>
                 </div>
@@ -294,9 +260,9 @@
                     <!--input message-->
                     <div class="col-md-12">
 
-                        <div class="md-form">
+                        <div class="md-form mb-3">
                             <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                            <label for="message">Your message</label>
+                            <label for="message" class="mb-1">Your message</label>
                         </div>
 
                     </div>
@@ -311,24 +277,24 @@
         </div>
 <!-- contact info -->
         <div class="col-md-3 text-center">
-            <ul class="list-unstyled mb-0">
-                <li><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-pin-map-fill" viewBox="0 0 16 16">
+            <ul class="list-unstyled mb-3">
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-pin-map-fill mb-2 mt-3" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"/>
                     <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
                   </svg>
-                    <p>Place, CA 12345, USA</p>
+                    <p>Los Angeles, CA 90045, USA</p>
                 </li>
 
-                <li><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-telephone-fill mb-2 mt-3" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
                   </svg>
-                    <p>+ 01 234 567 89</p>
+                    <p>+ 01 310 424 7088</p>
                 </li>
 
-                <li><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-envelope-fill mb-2 mt-3" viewBox="0 0 16 16">
                     <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
                   </svg>
-                    <p>blank@hotmail.com</p>
+                    <p>UrMixContact@hotmail.com</p>
                 </li>
             </ul>
         </div>
@@ -336,7 +302,7 @@
     </div>
 
 </section>
-
+</a>
 
 
 <!-- footer -->
