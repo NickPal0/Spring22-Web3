@@ -9,17 +9,20 @@
     color:white
 }
 
-.mt-1 {
-    margin-top: (spacer * 10) !important;
-  }
-
-.mt-2 {
-    margin-top: 100px;
+.orangi{
+    background-color: #f16206;
 }
 
-.fuckit{
+
+
+.bigpad{
     padding-top: 145px;
     padding-bottom: 145px;
+}
+
+.medpad{
+    padding-top: 100px;
+    padding-bottom: 100px; 
 }
 
 nav a {
@@ -27,13 +30,14 @@ nav a {
     padding: 10px 20px;
     display: inline-block;
     border-bottom: 2px solid transparent;
-    transition: background-color 3s, border-bottom 5s;
+    transition: background-color 3s, border-bottom 4s;
+    text-transform: uppercase;
 }
 
 nav a:hover {
-    background-color: rgb(255, 255, 255);
-    border-bottom: 2px solid rgb(139, 139, 139);
-    color: rgb(128,17,0);
+    background-color: rgba(253, 103, 16, 0.219);
+    border-bottom: 2px solid rgb(109, 107, 107);
+    color: #f16206;
  }
 
  nav div:hover {
@@ -63,49 +67,67 @@ nav a:hover {
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
+
+.btn{
+
+        --bs-btn-font-size: 1.2rem;
+}
+
 .btn-primary {
     --bs-btn-color: #fff;
-    --bs-btn-bg: rgb(128,17,0);
-    --bs-btn-border-color:rgb(128,17,0);
+    --bs-btn-bg: #f16206;
+    --bs-btn-border-color:#f16206;
     --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: rgb(148, 27, 8);
-    --bs-btn-hover-border-color: rgb(148, 27, 8);
+    --bs-btn-hover-bg: #ff6e14;
+    --bs-btn-hover-border-color: #ff6e14;
     --bs-btn-focus-shadow-rgb: 49,132,253;
     --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: rgb(90, 21, 10);
-    --bs-btn-active-border-color: rgb(90, 21, 10);
+    --bs-btn-active-bg: #d35c11;
+    --bs-btn-active-border-color: #d35c11;
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: rgb(128,17,0);
-    --bs-btn-disabled-border-color: rgb(128,17,0);
+    --bs-btn-disabled-bg: #c45a18;
+    --bs-btn-disabled-border-color: #c45a18;
 }
 
 .form-control:focus {
     color: #212529;
     background-color: #fff;
-    border-color: rgb(128,17,0);
+    border-color: #d0530a;
     outline: 0;
     box-shadow: 0 0 0 .25rem rgba(128,17,0,.25);
 }
 
-a {
+a  {
     font-family: 'Tiro Devanagari Sanskrit', serif;
+}
+
+body  {
+    font-family: 'Tiro Devanagari Sanskrit', serif;
+    font-size: 1.25rem;
 }
 
 p {
     font-family: 'Open Sans', sans-serif;
 }
 
+.h1, h1 {
+	font-size: 3.75rem;
+}
+
+.h2, h2 {
+	font-size: 2.5rem;
+}
 
 .opacityR{
     position: relative;
-    animation: fadeR 3s 4s forwards;
+    animation: fadeR 3s 2s forwards;
     opacity: 0;
    }
 
    .opacityL{
     position: relative;
-    animation: fadeL 3s 4s forwards;
+    animation: fadeL 3s 2s forwards;
     opacity: 0;
    }
 

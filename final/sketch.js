@@ -1,9 +1,8 @@
 
 let pos = 25;
 
-const faders = document.querySelectorAll
-('.fade-in')
-
+const faders = document.querySelector('.fade-in')
+console.info(faders[0])
 const appearOptions = { };
 
 const appearOnScroll = new IntersectionObserver
@@ -12,6 +11,7 @@ const appearOnScroll = new IntersectionObserver
      appearOnScroll
      ) {
          entries.forEach(entry =>{
+             console.info(entry)
              if (!entry.isIntersecting){
                  return;
              } else {
