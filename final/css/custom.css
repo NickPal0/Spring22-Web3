@@ -46,7 +46,7 @@ nav a:hover {
  }
 
 :root{
-    --bs-border-color: #ffffff;
+    --bs-border-color: transparent;
 }
 
 .form-control {
@@ -118,6 +118,7 @@ nav a:hover {
 
 a  {
     font-family: 'Tiro Devanagari Sanskrit', serif;
+    font-size: .75em;
 }
 
 body  {
@@ -139,13 +140,13 @@ p {
 
 .opacityR{
     position: relative;
-    animation: fadeR 3s 2s forwards;
+    animation: fadeR 2s 1s forwards;
     opacity: 0;
    }
 
    .opacityL{
     position: relative;
-    animation: fadeL 3s 2s forwards;
+    animation: fadeL 2s 1s forwards;
     opacity: 0;
    }
 
@@ -164,7 +165,7 @@ p {
 
  .fade-in{
     opacity: 0;
-    transition: opacity 2s ease-in;
+    transition: opacity 3s ease-in;
  }
 
  .fade-in.appear{
