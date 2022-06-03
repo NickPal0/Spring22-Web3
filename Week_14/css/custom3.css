@@ -1,0 +1,157 @@
+
+
+.imgcircle{
+    border-radius: 50%;
+}
+
+.fontwhite{
+    
+    color:white
+}
+
+
+
+.bigpad{
+    padding-top: 145px;
+    padding-bottom: 145px;
+}
+
+.medpad{
+    padding-top: 100px;
+    padding-bottom: 100px; 
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    transition: background-color 3s, border-bottom 4s;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: rgba(225, 16, 253, 0.219);
+    
+    color: #06f183;
+ }
+
+ nav div:hover {
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(0, 0, 0);
+ }
+
+:root{
+    --bs-border-color: transparent;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .375rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+.btn{
+
+        --bs-btn-font-size: 1.2rem;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #dd31ff;
+    --bs-btn-border-color:#dd31ff;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #dc50f8;
+    --bs-btn-hover-border-color: #dc50f8;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #b91bd8;
+    --bs-btn-active-border-color: #b91bd8;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #ed95ff;
+    --bs-btn-disabled-border-color: #ed95ff;
+}
+
+
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #dd31ff;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(190, 3, 207, 0.25);
+}
+
+a  {
+    font-family: 'Dancing Script', cursive;
+    font-size: .75em;
+}
+
+body  {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.25rem;
+    font-style: bold;
+}
+
+
+
+p {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.h1, h1 {
+	font-size: 3rem;
+}
+
+.h2, h2 {
+	font-size: 2rem;
+}
+
+.opacityR{
+    position: relative;
+    animation: fadeR 2s 1s forwards;
+    opacity: 0;
+   }
+
+   .opacityL{
+    position: relative;
+    animation: fadeL 2s 1s forwards;
+    opacity: 0;
+   }
+
+
+@keyframes fadeR {
+    from { opacity: 0;  right: -100vw;}
+    to  { opacity: 1; right: 0;}
+
+}
+
+@keyframes fadeL {
+    from { opacity: 0;  left: -100vw;}
+    to  { opacity: 1; left: 0;}
+
+}
+
+ .fade-in{
+    opacity: 0;
+    transition: opacity 3s ease-in;
+ }
+
+ .fade-in.appear{
+     opacity: 1;
+ }
+

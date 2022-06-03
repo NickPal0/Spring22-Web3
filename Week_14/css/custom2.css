@@ -1,0 +1,146 @@
+
+
+.imgcircle{
+    border-radius: 50%;
+}
+
+.fontwhite{
+    
+    color:white
+}
+
+
+.bigpad{
+    padding-top: 145px;
+    padding-bottom: 145px;
+}
+
+.medpad{
+    padding-top: 100px;
+    padding-bottom: 100px; 
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    transition: background-color 3s, border-bottom 4s;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+   
+    background-color: rgba(253, 103, 16, 0.219);
+    border-bottom: 2px solid rgb(109, 107, 107);
+    color: #0b4cff;
+ }
+
+ nav div:hover {
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(139, 139, 139);
+ }
+
+:root{
+    --bs-border-color: transparent;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .375rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+.btn{
+
+        --bs-btn-font-size: 1.2rem;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #0b4cff;
+    --bs-btn-border-color:#0b4cff;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #134ae4;
+    --bs-btn-hover-border-color: #134ae4;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #2e66ff;
+    --bs-btn-active-border-color: #2e66ff;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #7da0ff;
+    --bs-btn-disabled-border-color: #7da0ff;
+}
+
+
+
+a  {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: .75em;
+}
+
+body  {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 1.rem;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+}
+
+.h1, h1 {
+	font-size: 3.75rem;
+}
+
+.h2, h2 {
+	font-size: 2.5rem;
+}
+
+.opacityR{
+    position: relative;
+    animation: fadeR 2s 1s forwards;
+    opacity: 0;
+   }
+
+   .opacityL{
+    position: relative;
+    animation: fadeL 2s 1s forwards;
+    opacity: 0;
+   }
+
+
+@keyframes fadeR {
+    from { opacity: 0;  right: -100vw;}
+    to  { opacity: 1; right: 0;}
+
+}
+
+@keyframes fadeL {
+    from { opacity: 0;  left: -100vw;}
+    to  { opacity: 1; left: 0;}
+
+}
+
+ .fade-in{
+    opacity: 0;
+    transition: opacity 3s ease-in;
+ }
+
+ .fade-in.appear{
+     opacity: 1;
+ }
+
