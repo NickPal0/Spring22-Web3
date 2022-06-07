@@ -25,6 +25,13 @@
     padding-bottom: 100px; 
 }
 
+hr{
+    color: transparent;
+    padding-top: 125px;
+    padding-bottom: 125px;  
+}
+
+
 nav a {
     color: rgb(0, 0, 0);
     padding: 10px 20px;
@@ -40,9 +47,12 @@ nav a:hover {
     color: #f16206;
  }
 
- nav div:hover {
-    background-color: rgb(255, 255, 255);
-    border-bottom: 2px solid rgb(139, 139, 139);
+ 
+
+ nav .navbar-brand:hover {
+    background-color: transparent;
+    border-bottom: 2px solid rgb(109, 107, 107);
+    
  }
 
 :root{
@@ -131,11 +141,15 @@ p {
 }
 
 .h1, h1 {
-	font-size: 3.75rem;
+	font-size: 4rem;
 }
 
 .h2, h2 {
-	font-size: 2.5rem;
+	font-size: 2.75rem;
+}
+
+.h3, h3{
+    font-size: 1.75rem;
 }
 
 .opacityR{
@@ -171,4 +185,5 @@ p {
  .fade-in.appear{
      opacity: 1;
  }
+
 

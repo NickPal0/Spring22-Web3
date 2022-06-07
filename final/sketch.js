@@ -23,3 +23,7 @@ const appearOnScroll = new IntersectionObserver
      faders.forEach(fader => {
          appearOnScroll.observe(fader);
      })
+
+
+     const root = document.documentElement;
+ 
