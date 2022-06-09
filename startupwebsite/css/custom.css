@@ -78,6 +78,32 @@ nav a:hover {
 }
 
 
+
+.dark-bg{
+    background-color: #6d6d6d;
+}
+
+
+.bgcolor{
+    background-color: #d8d8d8;
+    border-radius: 25px;
+}
+
+.bgcolor2{
+    background-color: #f8f9fa;
+    border-radius: 25px;
+}
+
+.context-menu {
+    cursor: pointer;
+    
+}
+
+.normal-text{
+    color: white;
+    text-decoration: none;
+}
+
 .btn{
 
         --bs-btn-font-size: 1.2rem;
@@ -99,6 +125,8 @@ nav a:hover {
     --bs-btn-disabled-bg: #c45a18;
     --bs-btn-disabled-border-color: #c45a18;
 }
+
+
 
 .btn-secondary {
     --bs-btn-color: #fff;
@@ -129,6 +157,12 @@ nav a:hover {
 a  {
     font-family: 'Tiro Devanagari Sanskrit', serif;
     font-size: .75em;
+    text-decoration: none;
+}
+
+.textfix{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25rem;
 }
 
 body  {
